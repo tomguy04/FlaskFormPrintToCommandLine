@@ -14,14 +14,28 @@
 </head>
     <body>
         <!-- use the name attribute name='...' to create a key/value pair-->
-        <h1>here is the form:</h1>
-        <form action='/process' method='post'>
-            Your Name:<input type='text' name='name'>
-            
-            <input type='submit' value='Submit'>
-        </form>
-        <!-- <h1>here is the data:</h1>
-        <p>{{myname}}</p> -->
-
+        <div id="wrapper">
+            <form action='/process' method='post'>
+                <p>Your Name:<input type='text' name='name'></p>
+                <p>Dojo Location:  
+                    <select name="location">
+                        <option value="San Jose">San Jose</option>
+                        <option value="Seattle">Seattle</option>
+                    </select>
+                </p>
+                <p>Favorite Language:
+                    <select name="language">
+                        <option value="Python">Python</option>
+                        <option value="JavaScript">JavaScript</option>
+                    </select>
+                    </p>
+                <p>Comment (optional):
+                    <textarea name="comment" rows="10" cols="30">
+                    </textarea>
+                </p>
+                <input type='submit' value='Submit'>
+            </form>
+        </div>
+        <p>123</p>
     </body>
 </html>
